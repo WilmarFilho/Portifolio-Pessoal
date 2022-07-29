@@ -1,15 +1,102 @@
+/*Responsividade*/
+
+@media (max-width: 475.98px) {
+	img.img-logo {
+		width: 280px;
+	}
+
+	section#titulo-curriculo h1 , section#titulo-sobre h1 , section#titulo-projetos h1 {
+		text-shadow: 0 0 1em cyan;
+		font-family: beach;
+		font-size: 5em;
+	}
+
+	section#sobre h4 {
+		font-family: beach;
+		font-size: 4.2em;
+		text-shadow: 0 0 1em cyan;
+	}
+
+	img.img-principal	{
+		border-radius: 	10px;
+		width: 500px;
+		height: 400px;
+	}
+
+	li.size-li {
+		font-size: 1.2em;
+		color: white;
+		text-shadow: 0 0 1em cyan;
+	}
+
+	div.hidden {
+		height: 100px;
+	}
+}
+
+@media (min-width: 475.99px) and (max-width: 575.98px) {
+	img.img-logo {
+		width: 280px;
+	}
+
+	section#titulo-curriculo h1 , section#titulo-sobre h1 , section#titulo-projetos h1 {
+		text-shadow: 0 0 1em cyan;
+		font-family: beach;
+		font-size: 4.5em;
+	}
+
+	section#sobre h4 {
+		font-family: beach;
+		font-size: 3.5em;
+		text-shadow: 0 0 1em cyan;
+	}
+
+	img.img-principal	{
+		border-radius: 	10px;
+		width: 500px;
+		height: 400px;
+	}
+
+	li.size-li {
+		font-size: 1.2em;
+		color: white;
+		text-shadow: 0 0 1em cyan;
+	}
+
+	div.hidden {
+		height: 100px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+	img.img-logo {
+		width: 280px;
+	}
+
+	section#sobre h4 {
+		font-family: beach;
+		font-size: 4.2em;
+		text-shadow: 0 0 1em cyan;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+	section#sobre h4 {
+		font-family: beach;
+		font-size: 3.6em;
+		text-shadow: 0 0 1em cyan;
+	}
+}
+
+
 /*Formatações Gerais*/
 
 body {
 	margin: 0;
-	background: url('imagens/bg2.jpg');
+	background: url('imagens/bg3.jpg');
+	background-position: center;
 	background-size: cover;
 	font-family: one;
-}
-
-@font-face {
-	src: url('fonts/dream.woff');
-	font-family: dream;
 }
 
 @font-face {
@@ -22,10 +109,18 @@ body {
 	font-family: one;
 }
 
+.hidden {
+	height: 150px;
+}
+
 /*Topo*/
 
+.img-logo {
+	width: 500px;
+}
+
 nav {
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .9);
 	box-shadow: 0 0 1em darkred;
 }
 
@@ -39,7 +134,7 @@ nav li a {
 }
 
 nav li a:hover {
-	color: darkred;
+	color: cyan;
 	transition: 1s;
 }
 
@@ -48,10 +143,6 @@ nav li a:hover {
 /*#sobre*/
 
 #sobre {
-	margin-top: 500px;
-	border: 5px double white;
-	border-left: none;
-	border-right: none;
 	box-shadow: 0 0 1em red;
 	padding: 20px 0;
 }
@@ -67,7 +158,6 @@ nav li a:hover {
 }
 
 .img-principal	{
-	box-shadow: 0 0 1em lightgray;
 	border-radius: 	10px;
 	width: 500px;
 	height: 600px;
@@ -75,20 +165,34 @@ nav li a:hover {
 
 /*#curriculo*/
 
-
 .dado {
-	border: 2px solid black;
+	border: 6px double white;
 	border-right: none;
 	border-left: none;
 }
 
-
 #curriculo h2 {
 	font-family: beach;
+	font-size: 3em;
+	text-shadow: 0 0 1em red;
 }
 
 #curriculo h3 {
 	font-family: one;
+	font-style: italic;
+	font-size: 1.5em;
+	text-shadow: 0 0 1em cyan;
+}
+
+#curriculo p {
+	font-size: 1.3em;
+}
+
+/*Projetos*/
+
+#card {
+	border-radius: 20px;
+	box-shadow: 0 0 1em red;
 }
 
 /* Titulo conteudos */
@@ -97,7 +201,6 @@ nav li a:hover {
 	background: url('imagens/bg5.jpg');
 	background-size: cover;
 	background-position: center;
-	box-shadow: 0 0 1em black;
 	padding: 20px 0;
 }
 
