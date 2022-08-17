@@ -2,7 +2,7 @@
 
 @media (max-width: 475.98px) {
 	img.img-logo {
-		width: 280px;
+		width: 240px;
 	}
 
 	section#titulo-curriculo h1 , section#titulo-sobre h1 , section#titulo-projetos h1 {
@@ -13,7 +13,7 @@
 
 	section#sobre h4 {
 		font-family: beach;
-		font-size: 4.2em;
+		font-size: 3em;
 		text-shadow: 0 0 1em cyan;
 	}
 
